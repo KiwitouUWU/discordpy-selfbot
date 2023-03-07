@@ -7,7 +7,7 @@ from colorama import Fore
 load_dotenv()
 
 TOKEN = os.getenv('DISCORD_TOKEN')
-SELFBOT = bool(os.getenv('SELFBOT'))
+SELFBOT = os.getenv('SELFBOT')
 
 bot = commands.Bot(command_prefix="") # no actual commands will be called
 
@@ -22,5 +22,5 @@ for extension in os.listdir("cogs/"):
             print(e)
 
 
-bot.run(TOKEN, bot=not SELFBOT)
+bot.run(TOKEN, bot=False if SELFBOT == "True" or SELFBOT== "true" else True)
 
