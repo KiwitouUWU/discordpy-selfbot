@@ -14,7 +14,7 @@ python setup.py
 ### Usage
 1. fill all fields in .env file
 
-    ``DISCORD_TOKEN`` can be a user or bot token, set SELFBOT accordingly.
+    ``DISCORD_TOKEN`` can be a user or bot token, set ``SELFBOT`` accordingly.
 2. ``python main.py``
 
 ### Database structure
