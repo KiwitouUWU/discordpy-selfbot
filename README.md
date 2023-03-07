@@ -15,3 +15,8 @@ python setup.py
 1. fill all fields in .env file
 2. ``python main.py``
 
+### Database structure
+(I know just saving the message id in deleted would be better)
+
+logs(guild, guild_id, channel, channel_id, author, userid, time, content)
+deleted(guild, guild_id, channel, channel_id, author, userid, time, content)
