@@ -13,4 +13,4 @@ python setup.py
 
 #### Usage
 1. fill all fields in .env file
-2. python main.py
+2. ``python main.py``
